@@ -1,13 +1,10 @@
-package main
+package mathutil
 
-import (
-	"main/pkg/mathutil"
-	"testing"
-)
+import "testing"
 
 func TestMaxInt(t *testing.T) {
 	a, b := 2, 7
-	res := mathutil.MaxInt(a, b)
+	res := MaxInt(a, b)
 	if res != b {
 		t.Errorf("expected %d, got %d", b, res)
 	}

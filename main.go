@@ -1,13 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"main/pkg/mathutil"
+)
+
 func main() {
-
-}
-
-func MaxInt(a, b int) int {
-	if a >= b {
-		return a
-	}
-
-	return b
+	fmt.Println(mathutil.MaxInt(2, 7)) // 7
 }
